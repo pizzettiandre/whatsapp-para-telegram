@@ -1,5 +1,7 @@
 # WhatsApp → Telegram
 
+🇺🇸 [Read in English](README.en.md)
+
 Importa uma conversa exportada do WhatsApp (privada ou de grupo) para o Telegram pela
 **API oficial de importação** (`messages.initHistoryImport`), a mesma usada pelo app do
 celular. As mensagens mantêm a data e a hora originais e aparecem marcadas como importadas.
@@ -73,7 +75,8 @@ digitados.
   `zipfile` os leria como cp437. O script corrige isso.
 - **Local da extração:** o zip é descompactado em `extraidos/`, ao lado do script, e não ao
   lado do zip. Assim a extração não cai numa pasta sincronizada (Mesa/Documentos no iCloud).
-- **Datas:** o período do export é lido assumindo dia/mês/ano.
+- **Datas:** o período do export é lido assumindo dia/mês/ano. Exports de celulares no formato
+  americano (mês/dia/ano) mostram períodos errados, o que afeta o aviso de importação duplicada.
 
 ## Arquivos locais (fora do Git)
 
@@ -90,3 +93,7 @@ digitados.
 .venv/bin/pip install -r requirements-dev.txt
 .venv/bin/python -m pytest
 ```
+
+## Licença
+
+[MIT](LICENSE)
