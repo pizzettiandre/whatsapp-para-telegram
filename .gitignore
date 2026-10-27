@@ -1,0 +1,14 @@
+# Dados pessoais e de sessão: nunca versionar
+*.session
+*.session-journal
+historico_importacoes.json
+historico_importacoes.tmp
+.importacao_telegram_*.json
+*.zip
+extraidos/
+
+# Ambiente
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
